@@ -1,0 +1,15 @@
+import { LucideIcon } from "lucide-react";
+
+export type Pricing = {
+  plan: string;
+  description: string;
+  price: number;
+  currency: string;
+  period: string;
+  button: string;
+  features: {
+    included: boolean;
+    name: string;
+  }[];
+  Icon: LucideIcon;
+};
