@@ -1,0 +1,92 @@
+{
+  "access": "Access",
+  "welcome": "Welcome to",
+  "minimalist": "A minimalist",
+  "template": "template",
+  "provider": "provider for profesionals.",
+  "catchphrase": "Working is already hard. Handling your paperwork shouldn&apos;t be. Let us help you keeping it simple.",
+  "cta": "Start building",
+  "routes": {
+    "documents": "Documents",
+    "pricing": "Pricing",
+    "about": "About"
+  },
+  "features": {
+    "title": "Another template provider?",
+    "description": "Hell yeah! But this one is different:",
+    "items": {
+      "easy": {
+        "title": "Easy",
+        "description": "Pick a document template. Fill it. Export. Done."
+      },
+      "straightforward": {
+        "title": "Straightforward",
+        "description": "Pay once or pay as needed. No complicated pricing. No subscription."
+      },
+      "direct": {
+        "title": "Direct",
+        "description": "You just want a template for your documents. Nothing more, nothing less."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Only pay for what you need. No hidden fees. No complicated pricing.",
+    "items": {
+      "sheet": {
+        "title": "Sheet",
+        "description": "Hey you! Yes, you! The lightweight user who just needs a template to handle things fast. This is for you.",
+        "currency": "$",
+        "period": "per sheet",
+        "button": "Buy sheets"
+      },
+      "document": {
+        "title": "Document",
+        "description": "Ideal for those who need to handle multiple documents, want to save time and access them anywhere.",
+        "currency": "$",
+        "period": "per document",
+        "button": "Buy documents"
+      },
+      "library": {
+        "title": "Library",
+        "description": "If you are a heavy lifter when it comes to paperwork, this is the plan for you.",
+        "currency": "$",
+        "period": "once",
+        "button": "Buy library"
+      }
+    },
+    "features": {
+      "unlimitedExports": "Export unlimited times",
+      "unlimitedDocuments": "Unlimited documents",
+      "cloudStorage": "Cloud storage"
+    }
+  },
+  "footer": {
+    "description": "Paper is a minimalist template provider dedicated to offering a simple, user-friendly alternative in the software market, which is often cluttered with subscription-based, feature-heavy products that can overwhelm users.",
+    "useful": {
+      "title": "Useful links",
+      "items": {
+        "templates": "Documents",
+        "pricing": "Pricing",
+        "faqs": "FAQs"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookies Policy"
+      }
+    },
+    "suggestions": {
+      "title": "Want to see a template?",
+      "description": "Send me a suggestion and I'll try my best"
+    },
+    "ownership": "is a product of",
+    "allRights": "All rights reserved.",
+    "developer": "Developed by",
+    "support": "Do you like the project and would you like to contribute?",
+    "buyCoffee": "Buy me a coffee"
+  }
+}

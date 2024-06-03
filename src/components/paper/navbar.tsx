@@ -1,13 +1,13 @@
-import { cn } from "@/lib/utils";
 import { Route } from "@/models/ui/route";
+import { TFunction } from "i18next";
 import Link from "next/link";
-import { buttonVariants } from "../ui/button";
 
 type Props = {
   routes: Route[];
+  t: TFunction<any, any>;
 };
 
-export default function Navbar({ routes }: Props) {
+export default function Navbar({ routes, t }: Props) {
   return (
     <nav>
       <ul className="flex gap-4">
@@ -17,7 +17,7 @@ export default function Navbar({ routes }: Props) {
               className="text-sm hover:underline hover:text-primary"
               href={route.href}
             >
-              {route.title}
+              {t(route.title)}
             </Link>
           </li>
         ))}

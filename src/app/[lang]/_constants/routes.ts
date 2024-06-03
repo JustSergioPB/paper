@@ -2,15 +2,15 @@ import { Route } from "@/models/ui/route";
 
 export const ROUTES: Route[] = [
   {
-    title: "Documents",
+    title: "routes.documents",
     href: "/documents",
   },
   {
-    title: "Pricing",
+    title: "routes.pricing",
     href: "#pricing",
   },
   {
-    title: "About",
+    title: "routes.about",
     href: "#about",
   },
 ];

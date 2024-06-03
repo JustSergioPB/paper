@@ -11,8 +11,9 @@ export default function ThemeToggle() {
   const { setTheme, theme } = useTheme();
 
   useEffect(() => {
-    setTheme(localStorage.getItem("theme") as Theme);
-  }, []);
+    const theme = localStorage.getItem("theme") as Theme;
+    setTheme(theme ?? "system");
+  }, [setTheme]);
 
   function changeTheme(theme: Theme) {
     localStorage.setItem("theme", theme);
@@ -23,7 +24,7 @@ export default function ThemeToggle() {
     <ToggleGroup
       type="single"
       className="border border-solid border-slate-200 dark:border-slate-700 p-2 rounded-full"
-      value={localStorage.getItem("theme") ?? theme}
+      value={theme}
       onValueChange={(value) => changeTheme(value as Theme)}
     >
       <ToggleGroupItem

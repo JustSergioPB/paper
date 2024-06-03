@@ -1,0 +1,92 @@
+{
+  "access": "Acceso",
+  "welcome": "Bienvenido a",
+  "minimalist": "Un",
+  "template": "proveedor de plantillas",
+  "provider": "minimalista para profesionales.",
+  "catchphrase": "Trabajar ya es difícil. Hacer tu papeleo no debería serlo. Déjanos ayudarte a simplificarlo.",
+  "cta": "Empieza a construir",
+  "routes": {
+    "documents": "Documentos",
+    "pricing": "Precios",
+    "about": "Acerca de"
+  },
+  "features": {
+    "title": "¿Otro proveedor de plantillas?",
+    "description": "¡Claro que sí! Pero este es diferente:",
+    "items": {
+      "easy": {
+        "title": "Fácil",
+        "description": "Elige una plantilla. Rellénala. Exporta. Listo."
+      },
+      "straightforward": {
+        "title": "Directo",
+        "description": "Paga una vez o paga según necesites. Sin precios complicados. Sin suscripción."
+      },
+      "direct": {
+        "title": "Directo",
+        "description": "Solo quieres una plantilla para tus documentos. Nada más, nada menos."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Precios",
+    "description": "Solo paga por lo que necesitas. Sin tarifas ocultas. Sin precios complicados.",
+    "items": {
+      "sheet": {
+        "title": "Hoja",
+        "description": "¡Eh tú! Sí, tú! Ese usuario que solo necesita una plantilla para manejar las cosas rápidamente. Esto es para ti.",
+        "currency": "€",
+        "period": "por hoja",
+        "button": "Comprar hojas"
+      },
+      "document": {
+        "title": "Documento",
+        "description": "Ideal para aquellos que necesitan manejar múltiples documentos, quieren ahorrar tiempo y acceder a ellos en cualquier lugar.",
+        "currency": "€",
+        "period": "por documento",
+        "button": "Comprar documentos"
+      },
+      "library": {
+        "title": "Biblioteca",
+        "description": "Si lo tuyo es tener un alto volumen de papeleo, esta es la mejor opción para ti. Paga una vez y crea tantos documentos como necesites.",
+        "currency": "€",
+        "period": "una vez",
+        "button": "Comprar biblioteca"
+      }
+    },
+    "features": {
+      "unlimitedExports": "Exportaciones ilimitadas",
+      "unlimitedDocuments": "Documentos ilimitados",
+      "cloudStorage": "Almacenamiento en la nube"
+    }
+  },
+  "footer": {
+    "description": "Paper es un proveedor de plantillas minimalista dedicado a ofrecer una alternativa simple y fácil de usar en el mercado de software, que a menudo está lleno de productos basados en suscripción con muchas funciones que pueden abrumar a los usuarios.",
+    "useful": {
+      "title": "Enlaces útiles",
+      "items": {
+        "templates": "Documentos",
+        "pricing": "Precios",
+        "faqs": "Preguntas frecuentes"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "privacy": "Política de privacidad",
+        "terms": "Términos de servicio",
+        "cookies": "Política de cookies"
+      }
+    },
+    "suggestions": {
+      "title": "¿Quieres ver una plantilla?",
+      "description": "Envíame una sugerencia y haré mi mejor esfuerzo"
+    },
+    "ownership": "es un producto de",
+    "allRights": "Todos los derechos reservados.",
+    "developer": "Desarrollado por",
+    "support": "¿Te gusta el proyecto y te gustaría contribuir?",
+    "buyCoffee": "Cómprame un café"
+  }
+}

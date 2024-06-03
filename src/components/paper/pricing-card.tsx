@@ -11,10 +11,12 @@ import { CheckIcon, X } from "lucide-react";
 import { Pricing } from "@/models/ui/pricing";
 import { Badge } from "../ui/badge";
 import { cn } from "@/lib/utils";
+import { TFunction } from "i18next";
 
 type Props = {
   className?: string;
   pricing: Pricing;
+  t: TFunction<any, any>;
 };
 
 export default function PricingCard({
@@ -29,26 +31,25 @@ export default function PricingCard({
     Icon,
     description,
   },
+  t,
 }: Props) {
   return (
     <Card className={cn(className, "flex flex-col")}>
       <CardHeader>
         <CardTitle>
-          <Badge variant="secondary">{plan}</Badge>
+          <Badge variant="secondary">{t(plan)}</Badge>
         </CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription>{t(description)}</CardDescription>
       </CardHeader>
       <CardContent className="grow shrink-0 basis-auto">
         <div className="flex items-baseline mb-8 mt-2">
           <span className="text-4xl font-bold">
-            {currency}
+            {t(currency)}
             {price}
           </span>
-          <span className="ml-1 text-sm font-medium text-slate-500 dark:text-slate-400">
-            {period}
-          </span>
+          <span className="ml-1 text-sm font-medium">{t(period)}</span>
         </div>
-        <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+        <ul className="space-y-2 text-sm text-muted-foreground">
           {features.map((item, index) => (
             <li key={index} className="flex items-center gap-2">
               {item.included ? (
@@ -56,7 +57,7 @@ export default function PricingCard({
               ) : (
                 <X className="h-4 w-4 fill-primary" />
               )}
-              {item.name}
+              {t(item.name)}
             </li>
           ))}
         </ul>
@@ -64,7 +65,7 @@ export default function PricingCard({
       <CardFooter>
         <Button>
           <Icon className="mr-2 h-4 w-4" />
-          {button}
+          {t(button)}
         </Button>
       </CardFooter>
     </Card>
