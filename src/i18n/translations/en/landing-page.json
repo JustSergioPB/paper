@@ -88,5 +88,9 @@
     "developer": "Developed by",
     "support": "Do you like the project and would you like to contribute?",
     "buyCoffee": "Buy me a coffee"
+  },
+  "langs": {
+    "en": "English",
+    "es": "Spanish"
   }
 }

@@ -87,6 +87,10 @@
     "allRights": "Todos los derechos reservados.",
     "developer": "Desarrollado por",
     "support": "¿Te gusta el proyecto y te gustaría contribuir?",
-    "buyCoffee": "Cómprame un café"
+    "buyCoffee": "Invitame a un café"
+  },
+  "langs": {
+    "en": "Inglés",
+    "es": "Español"
   }
 }

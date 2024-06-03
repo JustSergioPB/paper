@@ -10,7 +10,15 @@ import { ROUTES } from "./_constants/routes";
 import { cn } from "@/lib/utils";
 import Logo from "@/components/paper/logo";
 import ThemeToggle from "@/components/paper/theme-toggle";
-import { useTranslation } from "@/i18n";
+import { useTranslation } from "@/i18n/server";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { languages } from "@/i18n/constants";
 
 export default async function Home({
   params: { lang },
@@ -72,12 +80,7 @@ export default async function Home({
         </p>
         <div className="flex items-center justify-center gap-4">
           {PRICINGS.map((pricing, index) => (
-            <PricingCard
-              key={index}
-              pricing={pricing}
-              className="h-96 w-72"
-              t={t}
-            />
+            <PricingCard key={index} pricing={pricing} className="w-72" t={t} />
           ))}
         </div>
       </section>
@@ -159,8 +162,20 @@ export default async function Home({
           </span>
         </div>
         <div className="flex items-center justify-between">
-          <div>
+          <div className="flex items-center gap-4">
             <ThemeToggle />
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder={t(`langs.${lang}`)} />
+              </SelectTrigger>
+              <SelectContent>
+                {languages.map((lang) => (
+                  <SelectItem key={lang} value={lang}>
+                    <Link href={`/${lang}`}>{t(`langs.${lang}`)}</Link>
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-center text-muted-foreground text-sm w-48">
