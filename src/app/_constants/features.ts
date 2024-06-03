@@ -1,11 +1,11 @@
 import { Feature } from "@/models/ui/feature";
-import { Coins, RouteOff, SignpostBig } from "lucide-react";
+import { Coins, FileHeart, SignpostBig } from "lucide-react";
 
 export const FEATURES: Feature[] = [
   {
-    Icon: RouteOff,
+    Icon: FileHeart,
     title: "Easy",
-    description: "Build. Export. Done.",
+    description: "Pick a document template. Fill it. Export. Done.",
   },
   {
     Icon: Coins,
@@ -15,6 +15,6 @@ export const FEATURES: Feature[] = [
   {
     Icon: SignpostBig,
     title: "Direct",
-    description: "You just want to build a CV. Nothing more, nothing less.",
+    description: "You just want a template for your documents. Nothing more, nothing less.",
   },
 ];

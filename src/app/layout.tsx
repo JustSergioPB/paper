@@ -13,12 +13,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { lang },
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: string };
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(inter.className, 'h-screen')}>
+    <html lang={lang ?? "en-US"}>
+      <body className={cn(inter.className, "h-screen")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -3,15 +3,15 @@ import { BookCopy, Coins, Printer } from "lucide-react";
 
 export const PRICINGS: Pricing[] = [
   {
-    plan: "Print",
+    plan: "Sheet",
     description:
-      "Ideal for those who need to print their CVs and want to save on ink.",
-    price: 5,
+      "Hey you! Yes, you! The lightweight user who just needs a template to handle things fast. This is for you.",
+    price: 2,
     currency: "€",
-    period: "per document",
+    period: "per sheet",
     features: [
       {
-        name: "Export to PDF unlimited times",
+        name: "Export unlimited times",
         included: true,
       },
       {
@@ -29,13 +29,13 @@ export const PRICINGS: Pricing[] = [
   {
     plan: "Document",
     description:
-      "Ideal for those who need to update their CVs from time to time and want to have a saved copy.",
-    price: 10,
+      "Ideal for those who need to handle multiple documents, want to save time and access them anywhere.",
+    price: 5,
     currency: "€",
     period: "per document",
     features: [
       {
-        name: "Export to PDF unlimited times",
+        name: "Export unlimited times",
         included: true,
       },
       {
@@ -53,13 +53,13 @@ export const PRICINGS: Pricing[] = [
   {
     plan: "Library",
     description:
-      "If you are a professional and need to manage your CV frequently, this is the plan for you.",
-    price: 100,
+      "If you are a heavy lifter when it comes to paperwork, this is the plan for you.",
+    price: 200,
     currency: "€",
     period: "once",
     features: [
       {
-        name: "Export to PDF unlimited times",
+        name: "Export unlimited times",
         included: true,
       },
       {
