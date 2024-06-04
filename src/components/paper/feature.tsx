@@ -21,7 +21,7 @@ export default function Feature({
         </div>
         <h3 className="font-medium">{t(title)}</h3>
       </div>
-      <p className="text-muted-foreground text-sm">{t(description)}</p>
+      <p className="text-muted-foreground text-sm md:text-center lg:text-start">{t(description)}</p>
     </li>
   );
 }

@@ -5,9 +5,7 @@ import { fallbackLang, languages, cookieName } from "./i18n/constants";
 acceptLanguage.languages(languages);
 
 export function middleware(req: NextRequest) {
-  let lang;
-  if (req.cookies.has(cookieName))
-    lang = acceptLanguage.get(req.cookies.get(cookieName)?.value);
+  let lang = acceptLanguage.get(req.cookies.get(cookieName)?.value);
   if (!lang) lang = acceptLanguage.get(req.headers.get("Accept-Language"));
   if (!lang) lang = fallbackLang;
 

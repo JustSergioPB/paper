@@ -2,12 +2,12 @@
   "access": "Access",
   "welcome": "Welcome to",
   "minimalist": "A minimalist",
-  "template": "template",
+  "template": "document template",
   "provider": "provider for profesionals.",
   "catchphrase": "Working is already hard. Handling your paperwork shouldn&apos;t be. Let us help you keeping it simple.",
   "cta": "Start building",
   "routes": {
-    "documents": "Documents",
+    "documents": "Templates",
     "pricing": "Pricing",
     "about": "About"
   },
@@ -17,15 +17,15 @@
     "items": {
       "easy": {
         "title": "Easy",
-        "description": "Pick a document template. Fill it. Export. Done."
+        "description": "Pick the document you want. Fill it. Export. Done. Don't waste time picking between a thousand options."
       },
       "straightforward": {
         "title": "Straightforward",
         "description": "Pay once or pay as needed. No complicated pricing. No subscription."
       },
       "direct": {
-        "title": "Direct",
-        "description": "You just want a template for your documents. Nothing more, nothing less."
+        "title": "Not complicated",
+        "description": "You just want a template for your documents. Nothing more, nothing less. Don't be overwhelmed by features you don't need."
       }
     }
   },
@@ -62,13 +62,14 @@
     }
   },
   "footer": {
-    "description": "Paper is a minimalist template provider dedicated to offering a simple, user-friendly alternative in the software market, which is often cluttered with subscription-based, feature-heavy products that can overwhelm users.",
+    "description": "Paper is a minimalist template provider for documents dedicated to offering a simple, user-friendly alternative in the software market, which is often cluttered with subscription-based, feature-heavy products that can overwhelm users.",
     "useful": {
       "title": "Useful links",
       "items": {
         "templates": "Documents",
         "pricing": "Pricing",
-        "faqs": "FAQs"
+        "faqs": "FAQs",
+        "contact": "Contact"
       }
     },
     "legal": {
@@ -81,7 +82,14 @@
     },
     "suggestions": {
       "title": "Want to see a template?",
-      "description": "Send me a suggestion and I'll try my best"
+      "description": "Send us a suggestion and we'll try our best",
+      "placeholder": "Your suggestion here...",
+      "hint": "Between {{min}} and {{max}} characters",
+      "button": "Submit",
+      "errors": {
+        "min": "Suggestion must be at least {{min}} characters.",
+        "max": "Suggestion must be at most {{max}} characters."
+      }
     },
     "ownership": "is a product of",
     "allRights": "All rights reserved.",

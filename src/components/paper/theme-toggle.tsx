@@ -3,29 +3,15 @@
 import { Monitor, Moon, Sun } from "lucide-react";
 import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group";
 import { useTheme } from "next-themes";
-import { useEffect } from "react";
-
-type Theme = "light" | "dark" | "system";
 
 export default function ThemeToggle() {
   const { setTheme, theme } = useTheme();
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme") as Theme;
-    setTheme(theme ?? "system");
-  }, [setTheme]);
-
-  function changeTheme(theme: Theme) {
-    localStorage.setItem("theme", theme);
-    setTheme(theme);
-  }
 
   return (
     <ToggleGroup
       type="single"
       className="border border-solid border-slate-200 dark:border-slate-700 p-2 rounded-full"
-      value={theme}
-      onValueChange={(value) => changeTheme(value as Theme)}
+      onValueChange={(value) => setTheme(value)}
     >
       <ToggleGroupItem
         className="rounded-full"

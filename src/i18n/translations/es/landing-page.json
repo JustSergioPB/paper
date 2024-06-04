@@ -2,12 +2,12 @@
   "access": "Acceso",
   "welcome": "Bienvenido a",
   "minimalist": "Un",
-  "template": "proveedor de plantillas",
+  "template": "proveedor de plantillas de documentos",
   "provider": "minimalista para profesionales.",
   "catchphrase": "Trabajar ya es difícil. Hacer tu papeleo no debería serlo. Déjanos ayudarte a simplificarlo.",
   "cta": "Empieza a construir",
   "routes": {
-    "documents": "Documentos",
+    "documents": "Plantillas",
     "pricing": "Precios",
     "about": "Acerca de"
   },
@@ -17,15 +17,15 @@
     "items": {
       "easy": {
         "title": "Fácil",
-        "description": "Elige una plantilla. Rellénala. Exporta. Listo."
+        "description": "Elige el documento que quieres. Rellénalo. Exporta. Listo. No te pierdas en un mar de opciones."
       },
       "straightforward": {
         "title": "Directo",
         "description": "Paga una vez o paga según necesites. Sin precios complicados. Sin suscripción."
       },
       "direct": {
-        "title": "Directo",
-        "description": "Solo quieres una plantilla para tus documentos. Nada más, nada menos."
+        "title": "Sin complicaciones",
+        "description": "Solo quieres una plantilla para tus documentos. Nada más, nada menos. No te abrumes con funcionalidades que no necesitas."
       }
     }
   },
@@ -35,7 +35,7 @@
     "items": {
       "sheet": {
         "title": "Hoja",
-        "description": "¡Eh tú! Sí, tú! Ese usuario que solo necesita una plantilla para manejar las cosas rápidamente. Esto es para ti.",
+        "description": "¡Eh tú! Sí, tú! Ese usuario que solo necesita una plantilla para gestionar las cosas rápidamente. Esto es para ti.",
         "currency": "€",
         "period": "por hoja",
         "button": "Comprar hojas"
@@ -62,13 +62,14 @@
     }
   },
   "footer": {
-    "description": "Paper es un proveedor de plantillas minimalista dedicado a ofrecer una alternativa simple y fácil de usar en el mercado de software, que a menudo está lleno de productos basados en suscripción con muchas funciones que pueden abrumar a los usuarios.",
+    "description": "Paper es un proveedor de plantillas de documentos minimalista dedicado a ofrecer una alternativa simple y fácil de usar en el mercado de software, que a menudo está lleno de productos basados en suscripción con muchas funciones que pueden abrumar a los usuarios.",
     "useful": {
       "title": "Enlaces útiles",
       "items": {
-        "templates": "Documentos",
+        "templates": "Templates",
         "pricing": "Precios",
-        "faqs": "Preguntas frecuentes"
+        "faqs": "Preguntas frecuentes",
+        "contact": "Contacto"
       }
     },
     "legal": {
@@ -81,7 +82,14 @@
     },
     "suggestions": {
       "title": "¿Quieres ver una plantilla?",
-      "description": "Envíame una sugerencia y haré mi mejor esfuerzo"
+      "description": "Envíanos una sugerencia y haremos nuestro mejor esfuerzo",
+      "placeholder": "Aquí va tu sugerencia...",
+      "hint": "Entre {{min}} y {{max}} caracteres.",
+      "button": "Enviar",
+      "errors": {
+        "min": "La sugerencia tiene que contener al menos {{min}} caracteres.",
+        "max": "La sugerencia tiene que contener como mucho {{max}} caracteres."
+      }
     },
     "ownership": "es un producto de",
     "allRights": "Todos los derechos reservados.",

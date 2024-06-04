@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
+import { dir } from "i18next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,7 @@ export default function RootLayout({
   params: { lang: string };
 }>) {
   return (
-    <html lang={lang}>
+    <html lang={lang} dir={dir(lang)} suppressHydrationWarning>
       <body className={cn(inter.className, "h-screen")}>
         <ThemeProvider
           attribute="class"
@@ -28,6 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

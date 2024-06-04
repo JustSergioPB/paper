@@ -35,7 +35,7 @@ i18next
 export function useTranslation(
   lang: string,
   ns: string,
-  options: { [key: string]: any }
+  options: { [key: string]: any } = {}
 ) {
   const [cookies, setCookie] = useCookies([cookieName]);
   const ret = useTranslationOrg(ns, options);
