@@ -8,6 +8,7 @@
   "cta": "Start building",
   "routes": {
     "documents": "Templates",
+    "features": "Why Paper?",
     "pricing": "Pricing",
     "about": "About"
   },

@@ -40,15 +40,15 @@ export default async function Home({
       </header>
       <main className="flex justify-center items-center py-48 px-5 xl:px-64">
         <div className="flex flex-col items-center xl:w-2/3">
-          <h1 className="text-4xl font-black mb-2">
+          <h1 className="text-3xl font-black mb-8 lg:text-5xl">
             {t("welcome")} <span className="text-primary">Paper</span>
           </h1>
-          <h2 className="text-2xl font-semibold mb-4 text-center">
+          <h2 className="text-xl font-semibold mb-4 text-center lg:text-2xl">
             {t("minimalist")}{" "}
             <span className="text-primary">{t("template")}</span>{" "}
             {t("provider")}
           </h2>
-          <p className="text-lg font-regular mb-8 text-muted-foreground text-center">
+          <p className="font-regular mb-8 text-muted-foreground text-center lg:text-lg">
             {t("catchphrase")}
           </p>
           <Link href="/documents" className={cn(buttonVariants())}>
@@ -57,9 +57,14 @@ export default async function Home({
           </Link>
         </div>
       </main>
-      <section className="flex flex-col items-center justify-center mb-24 px-5 xl:px-64">
-        <p className="text-2xl font-semibold mb-2">{t("features.title")}</p>
-        <p className="text-lg font-regular text-muted-foreground mb-8">
+      <section
+        className="flex flex-col items-center justify-center py-24 px-5 xl:px-64"
+        id="features"
+      >
+        <p className="text-xl font-semibold mb-2 lg:text-2xl">
+          {t("features.title")}
+        </p>
+        <p className="font-regular text-muted-foreground mb-8 lg:text-lg">
           {t("features.description")}
         </p>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,11 +79,13 @@ export default async function Home({
         </ul>
       </section>
       <section
-        className="flex flex-col items-center justify-center mb-24 px-5 xl:px-64"
+        className="flex flex-col justify-center py-24 px-5 lg:items-center xl:px-64"
         id="pricing"
       >
-        <h2 className="text-2xl font-semibold mb-2">{t("pricing.title")}</h2>
-        <p className="text-lg text-center font-regular text-muted-foreground mb-8">
+        <h2 className="text-xl font-semibold mb-2 lg:text-2xl">
+          {t("pricing.title")}
+        </h2>
+        <p className="font-regular text-muted-foreground mb-8 lg:text-center lg:text-lg">
           {t("pricing.description")}
         </p>
         <div className="flex gap-8 overflow-x-auto w-full xl:grid xl:grid-cols-3 xl:w-auto">
