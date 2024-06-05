@@ -1,13 +1,10 @@
 import { Button, buttonVariants } from "@/components/ui/button";
-import { Coffee, PencilRuler } from "lucide-react";
+import { ArrowRight, Coffee } from "lucide-react";
 import Link from "next/link";
-import { FEATURES } from "./_constants/features";
+import { FEATURES } from "../../constants/features";
 import Feature from "@/components/paper/feature";
-import { PRICINGS } from "./_constants/pricings";
 import PricingCard from "@/components/paper/pricing-card";
 import Navbar from "@/components/paper/navbar";
-import { ROUTES } from "./_constants/routes";
-import { cn } from "@/lib/utils";
 import Logo from "@/components/paper/logo";
 import ThemeToggle from "@/components/paper/theme-toggle";
 import { useTranslation } from "@/i18n/server";
@@ -19,7 +16,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { languages } from "@/i18n/constants";
-import { SuggestionForm } from "./_components/suggestion-form";
+import TemplateCard from "@/components/paper/template-card";
+import { TEMPLATES } from "@/constants/templates";
+import { SuggestionForm } from "@/components/forms/suggestion-form";
+import { PRICINGS } from "@/constants/pricings";
+import { ROUTES, APP_ROUTE } from "@/constants/routes";
 
 export default async function Home({
   params: { lang },
@@ -33,12 +34,12 @@ export default async function Home({
         <Logo />
         <div className="hidden md:flex md:items-center gap-4">
           <Navbar routes={ROUTES} t={t} />
-          <Link href="" className={cn(buttonVariants({ size: "sm" }))}>
+          <Link href="" className={buttonVariants({ size: "sm" })}>
             {t("access")}
           </Link>
         </div>
       </header>
-      <main className="flex justify-center items-center py-48 px-5 xl:px-64">
+      <main className="flex flex-col justify-center items-center py-32 px-5 xl:px-64">
         <div className="flex flex-col items-center xl:w-2/3">
           <h1 className="text-3xl font-black mb-8 lg:text-5xl">
             {t("welcome")} <span className="text-primary">Paper</span>
@@ -51,9 +52,20 @@ export default async function Home({
           <p className="font-regular mb-8 text-muted-foreground text-center lg:text-lg">
             {t("catchphrase")}
           </p>
-          <Link href="/documents" className={cn(buttonVariants())}>
-            <PencilRuler className="h-4 w-4 mr-2" />
-            {t("cta")}
+        </div>
+        <ul className="flex gap-8 overflow-x-auto w-full xl:grid xl:grid-cols-3 xl:w-auto mb-4">
+          {TEMPLATES.map((template) => (
+            <li key={template.href}>
+              <TemplateCard template={template} className="w-72 h-96" t={t} />
+            </li>
+          ))}
+        </ul>
+        <div className="flex justify-end">
+          <Link
+            href={APP_ROUTE}
+            className="flex items-center text-sm hover:text-primary hover:underline"
+          >
+            {t("cta")} <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </div>
       </main>
@@ -69,12 +81,13 @@ export default async function Home({
         </p>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {FEATURES.map((feature, index) => (
-            <Feature
-              key={index}
-              feature={feature}
-              t={t}
-              className="md:last:col-span-2 md:flex md:flex-col md:items-center lg:items-start lg:last:col-span-1 xl:w-72"
-            />
+            <li key={index}>
+              <Feature
+                feature={feature}
+                t={t}
+                className="md:last:col-span-2 md:flex md:flex-col md:items-center lg:items-start lg:last:col-span-1 xl:w-72"
+              />
+            </li>
           ))}
         </ul>
       </section>
@@ -88,16 +101,17 @@ export default async function Home({
         <p className="font-regular text-muted-foreground mb-8 lg:text-center lg:text-lg">
           {t("pricing.description")}
         </p>
-        <div className="flex gap-8 overflow-x-auto w-full xl:grid xl:grid-cols-3 xl:w-auto">
-          {PRICINGS.map((pricing, index) => (
-            <PricingCard
-              key={index}
-              pricing={pricing}
-              className="w-72 grow shrink-0 basis-auto"
-              t={t}
-            />
+        <ul className="flex gap-8 overflow-x-auto w-full xl:grid xl:grid-cols-3 xl:w-auto">
+          {PRICINGS.map((pricing) => (
+            <li key={pricing.plan}>
+              <PricingCard
+                pricing={pricing}
+                className="w-72 grow shrink-0 basis-auto"
+                t={t}
+              />
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
       <footer
         className="flex flex-col bg-card border-t px-5 py-24 xl:grid-rows-1 xl:px-64"
@@ -195,7 +209,7 @@ export default async function Home({
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row md:justify-between">
           <p className="text-center text-muted-foreground text-sm mb-4 md:mb-0">
-            ©2024 Paper {t("footer.ownership")}{" "}
+            2024© Paper {t("footer.ownership")}{" "}
             {process.env.NEXT_PUBLIC_DEVELOPER ?? "Sergio Peña Bayona"}.{" "}
             {t("footer.allRights")}
           </p>

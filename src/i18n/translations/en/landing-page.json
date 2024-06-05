@@ -5,12 +5,32 @@
   "template": "document template",
   "provider": "provider for profesionals.",
   "catchphrase": "Working is already hard. Handling your paperwork shouldn&apos;t be. Let us help you keeping it simple.",
-  "cta": "Start building",
+  "cta": "All templates",
+  "by": "by",
   "routes": {
     "documents": "Templates",
     "features": "Why Paper?",
     "pricing": "Pricing",
     "about": "About"
+  },
+  "templates": {
+    "items": {
+      "cv": {
+        "name": "Curriculum Vitae",
+        "description": "A simple, clean and professional CV template. Highlight your skills and experience.",
+        "button": "Get the job"
+      },
+      "resignation": {
+        "name": "Resignation Letter",
+        "description": "A professional resignation letter template. Keep it simple and straightforward.",
+        "button": "Move on"
+      },
+      "invoice": {
+        "name": "Invoice",
+        "description": "A minimalist invoice template. Keep track of your sales and get paid faster.",
+        "button": "Get paid"
+      }
+    }
   },
   "features": {
     "title": "Another template provider?",

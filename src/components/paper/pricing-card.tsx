@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import {
   Card,
   CardContent,
@@ -12,6 +12,8 @@ import { Pricing } from "@/models/ui/pricing";
 import { Badge } from "../ui/badge";
 import { cn } from "@/lib/utils";
 import { TFunction } from "i18next";
+import Link from "next/link";
+import { CHECKOUT_ROUTE } from "@/constants/routes";
 
 type Props = {
   className?: string;
@@ -22,6 +24,7 @@ type Props = {
 export default function PricingCard({
   className,
   pricing: {
+    name,
     plan,
     price,
     currency,
@@ -37,7 +40,7 @@ export default function PricingCard({
     <Card className={cn(className, "flex flex-col")}>
       <CardHeader>
         <CardTitle>
-          <Badge variant="secondary">{t(plan)}</Badge>
+          <Badge variant="secondary">{t(name)}</Badge>
         </CardTitle>
         <CardDescription>{t(description)}</CardDescription>
       </CardHeader>
@@ -63,10 +66,12 @@ export default function PricingCard({
         </ul>
       </CardContent>
       <CardFooter>
-        <Button>
-          <Icon className="mr-2 h-4 w-4" />
+        <Link
+          href={`${CHECKOUT_ROUTE}?plan=${plan}`}
+          className={buttonVariants()}
+        >
           {t(button)}
-        </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

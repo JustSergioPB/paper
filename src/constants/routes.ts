@@ -1,9 +1,12 @@
 import { Route } from "@/models/ui/route";
 
+export const APP_ROUTE = "/templates";
+export const CHECKOUT_ROUTE = "/checkout";
+
 export const ROUTES: Route[] = [
   {
     title: "routes.documents",
-    href: "/documents",
+    href: APP_ROUTE,
   },
   {
     title: "routes.features",

@@ -1,7 +1,10 @@
 import { LucideIcon } from "lucide-react";
 
+export type PricingPlan = "sheet" | "document" | "library";
+
 export type Pricing = {
-  plan: string;
+  plan: PricingPlan;
+  name: string;
   description: string;
   price: number;
   currency: string;

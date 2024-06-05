@@ -3,7 +3,8 @@ import { BookCopy, Coins, Printer } from "lucide-react";
 
 export const PRICINGS: Pricing[] = [
   {
-    plan: "pricing.items.sheet.title",
+    name: "pricing.items.sheet.title",
+    plan: "sheet",
     description: "pricing.items.sheet.description",
     price: 2,
     currency: "pricing.items.sheet.currency",
@@ -26,7 +27,8 @@ export const PRICINGS: Pricing[] = [
     Icon: Printer,
   },
   {
-    plan: "pricing.items.document.title",
+    name: "pricing.items.document.title",
+    plan: "document",
     description: "pricing.items.document.description",
     price: 5,
     currency: "pricing.items.document.currency",
@@ -49,7 +51,8 @@ export const PRICINGS: Pricing[] = [
     Icon: Coins,
   },
   {
-    plan: "pricing.items.library.title",
+    name: "pricing.items.library.title",
+    plan: "library",
     description: "pricing.items.library.description",
     price: 200,
     currency: "pricing.items.library.currency",

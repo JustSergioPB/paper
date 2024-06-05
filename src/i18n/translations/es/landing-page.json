@@ -5,12 +5,32 @@
   "template": "proveedor de plantillas de documentos",
   "provider": "minimalista para profesionales.",
   "catchphrase": "Trabajar ya es difícil. Hacer tu papeleo no debería serlo. Déjanos ayudarte a simplificarlo.",
-  "cta": "Empieza a construir",
+  "cta": "Todas las plantillas",
+  "by": "de",
   "routes": {
     "documents": "Plantillas",
     "features": "Por qué Paper?",
     "pricing": "Precios",
     "about": "Acerca de"
+  },
+  "templates": {
+    "items": {
+      "cv": {
+        "name": "Curriculum Vitae",
+        "description": "Un currículum vitae profesional y minimalista. Destaca tus habilidades y experiencia.",
+        "button": "Destaca"
+      },
+      "resignation": {
+        "name": "Carta de renuncia",
+        "description": "Una carta de renuncia profesional y simple. Deja tu trabajo con estilo.",
+        "button": "Hazlo con elegancia"
+      },
+      "invoice": {
+        "name": "Factura",
+        "description": "Una plantilla de factura simple. Factura a tus clientes de manera profesional.",
+        "button": "Factura ya"
+      }
+    }
   },
   "features": {
     "title": "¿Otro proveedor de plantillas?",
