@@ -1,0 +1,38 @@
+{
+  "personalDetails": {
+    "title": "Personal Details",
+    "fields": {
+      "jobTitle": {
+        "label": "Job Title",
+        "placeholder": "Software Developer"
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "John"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@gmail.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+1 123 456 7890"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "New York"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "United States"
+      },
+      "profilePic": {
+        "upload": "Upload Picture"
+      }
+    }
+  }
+}

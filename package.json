@@ -18,6 +18,7 @@
     "@radix-ui/react-toast": "1.1.5",
     "@radix-ui/react-toggle": "1.0.3",
     "@radix-ui/react-toggle-group": "1.0.4",
+    "@react-pdf/renderer": "^3.4.4",
     "accept-language": "3.0.18",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",

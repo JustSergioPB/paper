@@ -22,6 +22,10 @@ export const PRICINGS: Pricing[] = [
         name: "pricing.features.cloudStorage",
         included: false,
       },
+      {
+        name: "pricing.features.sharing",
+        included: false,
+      },
     ],
     button: "pricing.items.sheet.button",
     Icon: Printer,
@@ -30,7 +34,7 @@ export const PRICINGS: Pricing[] = [
     name: "pricing.items.document.title",
     plan: "document",
     description: "pricing.items.document.description",
-    price: 5,
+    price: 10,
     currency: "pricing.items.document.currency",
     period: "pricing.items.document.period",
     features: [
@@ -44,6 +48,10 @@ export const PRICINGS: Pricing[] = [
       },
       {
         name: "pricing.features.cloudStorage",
+        included: true,
+      },
+      {
+        name: "pricing.features.sharing",
         included: true,
       },
     ],
@@ -68,6 +76,10 @@ export const PRICINGS: Pricing[] = [
       },
       {
         name: "pricing.features.cloudStorage",
+        included: true,
+      },
+      {
+        name: "pricing.features.sharing",
         included: true,
       },
     ],

@@ -24,26 +24,26 @@ type Props = {
 };
 
 export function SuggestionForm({ className, lang }: Props) {
-  const { t } = useTranslation(lang, "landing-page");
+  const { t } = useTranslation(lang, "suggestion-form");
   const MIN = 10;
   const MAX = 150;
 
-  const FormSchema = z.object({
+  const suggestionSchema = z.object({
     suggestion: z
       .string()
       .min(MIN, {
-        message: t("footer.suggestions.errors.min", { min: MIN }),
+        message: t("errors.min", { min: MIN }),
       })
       .max(MAX, {
-        message: t("footer.suggestions.errors.max", { max: MAX }),
+        message: t("errors.max", { max: MAX }),
       }),
   });
 
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
+  const form = useForm<z.infer<typeof suggestionSchema>>({
+    resolver: zodResolver(suggestionSchema),
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
+  function onSubmit(data: z.infer<typeof suggestionSchema>) {
     toast({
       title: "You submitted the following values:",
       description: (
@@ -67,13 +67,13 @@ export function SuggestionForm({ className, lang }: Props) {
             <FormItem>
               <FormControl>
                 <Textarea
-                  placeholder={t("footer.suggestions.placeholder")}
+                  placeholder={t("placeholder")}
                   className="resize-none"
                   {...field}
                 />
               </FormControl>
               <FormDescription>
-                {t("footer.suggestions.hint", { min: MIN, max: MAX })}
+                {t("hint", { min: MIN, max: MAX })}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -81,7 +81,7 @@ export function SuggestionForm({ className, lang }: Props) {
         />
         <Button type="submit" className="w-full">
           <Send className="h-4 w-4 mr-2" />
-          {t("footer.suggestions.button")}
+          {t("button")}
         </Button>
       </form>
     </Form>

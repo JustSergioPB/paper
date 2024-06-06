@@ -1,0 +1,9 @@
+{
+  "placeholder": "Aquí va tu sugerencia...",
+  "hint": "Entre {{min}} y {{max}} caracteres.",
+  "button": "Enviar",
+  "errors": {
+    "min": "La sugerencia tiene que contener al menos {{min}} caracteres.",
+    "max": "La sugerencia tiene que contener como mucho {{max}} caracteres."
+  }
+}

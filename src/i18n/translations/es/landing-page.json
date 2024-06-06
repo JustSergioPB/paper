@@ -79,7 +79,8 @@
     "features": {
       "unlimitedExports": "Exportaciones ilimitadas",
       "unlimitedDocuments": "Documentos ilimitados",
-      "cloudStorage": "Almacenamiento en la nube"
+      "cloudStorage": "Almacenamiento en la nube",
+      "sharing": "Compartir"
     }
   },
   "footer": {
@@ -103,14 +104,7 @@
     },
     "suggestions": {
       "title": "¿Quieres ver una plantilla?",
-      "description": "Envíanos una sugerencia y haremos nuestro mejor esfuerzo",
-      "placeholder": "Aquí va tu sugerencia...",
-      "hint": "Entre {{min}} y {{max}} caracteres.",
-      "button": "Enviar",
-      "errors": {
-        "min": "La sugerencia tiene que contener al menos {{min}} caracteres.",
-        "max": "La sugerencia tiene que contener como mucho {{max}} caracteres."
-      }
+      "description": "Envíanos una sugerencia y haremos nuestro mejor esfuerzo"
     },
     "ownership": "es un producto de",
     "allRights": "Todos los derechos reservados.",

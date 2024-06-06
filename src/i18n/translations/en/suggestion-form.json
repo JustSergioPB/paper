@@ -1,0 +1,9 @@
+{
+  "placeholder": "Your suggestion here...",
+  "hint": "Between {{min}} and {{max}} characters",
+  "button": "Submit",
+  "errors": {
+    "min": "Suggestion must be at least {{min}} characters.",
+    "max": "Suggestion must be at most {{max}} characters."
+  }
+}

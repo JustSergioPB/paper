@@ -79,7 +79,8 @@
     "features": {
       "unlimitedExports": "Export unlimited times",
       "unlimitedDocuments": "Unlimited documents",
-      "cloudStorage": "Cloud storage"
+      "cloudStorage": "Cloud storage",
+      "sharing": "Sharing"
     }
   },
   "footer": {
@@ -103,14 +104,7 @@
     },
     "suggestions": {
       "title": "Want to see a template?",
-      "description": "Send us a suggestion and we'll try our best",
-      "placeholder": "Your suggestion here...",
-      "hint": "Between {{min}} and {{max}} characters",
-      "button": "Submit",
-      "errors": {
-        "min": "Suggestion must be at least {{min}} characters.",
-        "max": "Suggestion must be at most {{max}} characters."
-      }
+      "description": "Send us a suggestion and we'll try our best"
     },
     "ownership": "is a product of",
     "allRights": "All rights reserved.",
